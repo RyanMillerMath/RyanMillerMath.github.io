@@ -1,0 +1,9 @@
+nav{
+	position: absolute;
+	top: 15px;
+	left: 43%;
+	margin-left: -400px;
+	width: 800px;
+	font-family: "lucida grande", serif;
+	display: inline-block;
+}
