@@ -1,9 +1,22 @@
-nav{
+nav.navbar{
 	position: absolute;
 	top: 15px;
-	left: 43%;
-	margin-left: -400px;
+	left: 30%;
 	width: 800px;
-	font-family: "lucida grande", serif;
-	display: inline-block;
+	font-family: 'Great Vibes', serif;
+	font-size: 100%
+}
+
+ul.navbar{
+	list-style-type: none;
+}
+
+li.navbar{
+	display: inline;
+	margin: 5% 5% 5% 5%;
+}
+
+a.navbar{
+	text-decoration: none;
+	font-size: 2.5em;
 }
