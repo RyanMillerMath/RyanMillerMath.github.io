@@ -1,138 +1,86 @@
-html{
+html {
 	font-size: 16px;
-}
-
-html.other{
-	background: url('images/wov.png') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	overflow: hidden;
 }
 
-html#home{
-	background: url('images/circuit.jpg') no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	overflow: hidden;
-}
-
-body{
-	margin: 0;
-}
-
-header.navbar{
+nav.navbar {
 	position: absolute;
 	left: 0%;
 	top: 0%;
 	width: 100%;
-	height: 10%;
 	min-height: 100px;
-	background: url('images/splash.jpg') no-repeat 65% 65%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	background: url('images/splash.jpg') no-repeat 65% 65%/cover;
+	text-align: center;
 }
 
-nav.navbar{
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	font-family: 'Great Vibes', serif;
-}
-
-ul.navbar{
+ul.navbar {
 	list-style-type: none;
 	padding-top: .75rem;
-	padding-left: 30%;
 }
 
-li.navbar{
+li.navbar {
 	display: inline;
 	margin: 2.5% 2.5% 2.5% 2.5%;
 }
 
-a.navbar{
+a.navbar {
 	text-decoration: none;
 	font-size: 2.5rem;
+	font-family: 'Great Vibes', serif;
 	color: #ccffff;
 }
 
-main{
+main {
 	position: absolute;
 	left: 0%;
 	top: 10%;
 	width: 100%;
 	height: 80%;
+}
+
+main.other {
+	background: url('images/wov.png') no-repeat center center/cover fixed;
 	color: #000099;
-	font-family: 'Tangerine', serif;
+	font-family: Gafata, serif;
+	font-size: 1.375rem;
 }
 
-p.introTxt{
-	margin: 17.5% 0 0 7.5%;
-	font-size: 2.75rem;
+main#home {
+	background: url('images/circuit.jpg') no-repeat center center/cover fixed;
 }
 
-footer.socialMedia{
+footer.socialMedia {
 	position: absolute;
 	left: 0%;
 	top: 90%;
 	width: 100%;
-	height: 10%;
 	min-height: 100px;
-	background: url('images/cork-wallet.png') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	z-index: 19;
+	background: url('images/cork-wallet.png') no-repeat center center/cover fixed;
 	color: #000099;
+	text-align: left;
+	display: table;
 }
 
-p.socialMedia, img.socialMedia{
-	display: inline;
-	position: absolute;
+p.socialMedia, img.socialMedia {
+	display: table-cell;
+	vertical-align: middle;
 }
 
-img.socialMedia{
-	height: 62px;
-	width: 62px;
-	top: 10%;
-}
-
-p.socialMedia{
-	top: 15%;
+p.socialMedia {
 	font-size: 1.25rem;
+	text-align: center;
 }
 
-p#words{
-	left: 10%;
+img.socialMedia {
+	height: 64px;
+	width: 64px;
+	margin-top: 8.75%;
 }
 
-p#mailTxt{
-	left: 30%;
+img#linkedIn {
+	width: 70px;
 }
 
-p#linkTxt{
-	left: 50%;
-}
-
-p#gitTxt{
-	left: 70%;
-}
-
-img#mailImg{
-	left: 35%;
-}
-
-img#linkImg{
-	left: 55%;
-}
-
-img#gitImg{
-	left: 75%;
+img#mail {
+	transform: translateY(-7.5%);
 }
