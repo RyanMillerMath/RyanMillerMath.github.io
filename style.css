@@ -14,7 +14,7 @@ body.other {
 	background: url('images/wov.png') no-repeat center center/cover fixed;
 }
 
-nav.navbar {
+nav {
 	position: absolute;
 	top: 0%;
 	left: 0%;
@@ -45,8 +45,8 @@ header.title {
 	position: absolute;
 	top: 125px;
 	left: 50%;
-	margin-left: -450px;
 	width: 900px;
+	margin-left: -450px;
 	font-family: "Great Vibes", serif;
 	color: #000099;
 	font-size: 2.25rem;
@@ -56,12 +56,23 @@ header.title {
 main {
 	position: absolute;
 	top: 187.5px;
-	left: 50%;
-	width: 800px;
-	margin-left: -400px;
+	left: 40%;
+	width: 700px;
+	margin-left: -350px;
 	color: #000099;
 	font-family: Gafata, serif;
 	font-size: 1.3125rem;
+}
+
+aside{
+	position: absolute;
+	top: 206.25px;
+	left: 72.5%;
+}
+
+aside > img {
+	width: 272px;
+	height: 458px;
 }
 
 footer.socialMedia {
