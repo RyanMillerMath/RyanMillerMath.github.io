@@ -11,12 +11,16 @@ html.other{
 	background: url('images/wov.png') no-repeat center center/cover fixed;
 }
 
+body{
+	overflow: auto;
+}
+
 nav.navbar {
 	position: absolute;
-	left: 0%;
 	top: 0%;
+	left: 0%;
 	width: 100%;
-	min-height: 100px;
+	height: 100px;
 	background: url('images/splash.jpg') no-repeat 65% 65%/cover;
 	text-align: center;
 }
@@ -38,23 +42,35 @@ a.navbar {
 	color: #ccffff;
 }
 
+header.title
+{
+	position: absolute;
+	top: 125px;
+	left: 50%;
+	margin-left: -350px;
+	width: 700px;
+	font-family: "Great Vibes", serif;
+	color: #000099;
+	font-size: 2em;
+}
+
 main {
 	position: absolute;
-	left: 0%;
-	top: 10%;
-	width: 100%;
-	height: 80%;
+	top: 175px;
+	left: 50%;
+	width: 600px;
+	margin-left: -300px;
 	color: #000099;
 	font-family: Gafata, serif;
-	font-size: 1.375rem;
+	font-size: 1.3125rem;
 }
 
 footer.socialMedia {
 	position: absolute;
-	left: 0%;
 	top: 90%;
+	left: 0%;
 	width: 100%;
-	min-height: 100px;
+	height: 100px;
 	background: url('images/cork-wallet.png') no-repeat center center/cover fixed;
 	color: #000099;
 	text-align: left;
