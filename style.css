@@ -1,18 +1,10 @@
-html {
-	font-size: 16px;
-}
+html {font-size: 16px;}
 
-body {
-	overflow: hidden;
-}
+body {overflow: hidden;}
 
-body#home {
-	background: url('images/circuit.jpg') no-repeat center center/cover fixed;
-}
+body#home {background: url('images/circuit.jpg') no-repeat center center/cover fixed;}
 
-body.other {
-	background: url('images/wov.png') no-repeat center center/cover fixed;
-}
+body.other {background: url('images/wov.png') no-repeat center center/cover fixed;}
 
 nav {
 	position: absolute;
@@ -53,18 +45,23 @@ header.title {
 	text-align: center;
 }
 
-main {
-	position: absolute;
-	top: 187.5px;
-	left: 40%;
-	width: 700px;
-	margin-left: -350px;
+main{
 	color: #000099;
 	font-family: Gafata, serif;
 	font-size: 1.3125rem;
 }
 
-aside{
+section {
+	position: absolute;
+	top: 187.5px;
+	left: 40%;
+	width: 700px;
+	margin-left: -350px;
+}
+
+section#work{font-size: 1.1875rem;}
+
+aside {
 	position: absolute;
 	top: 206.25px;
 	left: 72.5%;
@@ -73,6 +70,19 @@ aside{
 aside > img {
 	width: 272px;
 	height: 458px;
+}
+
+figure {
+	margin-left: -2.5%;
+}
+
+figure img{
+	width: 320px;/*2*/
+	height: 180.9375px;
+}
+
+figure#work2{
+	margin-top: 15%;
 }
 
 footer.socialMedia {
@@ -103,10 +113,6 @@ img.socialMedia {
 	margin-top: 8.75%;
 }
 
-img#linkedIn {
-	width: 70px;
-}
+img#linkedIn {width: 70px;}
 
-img#mail {
-	transform: translateY(-7.5%);
-}
+img#mail {transform: translateY(-7.5%);}
