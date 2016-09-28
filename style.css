@@ -4,11 +4,11 @@ html {
 	height: 100%;
 }
 
-body {overflow: hidden; z-index: 0;}
+body {overflow: hidden;}
 
-body#home {background: url('images/circuit.jpg') no-repeat center center/cover fixed;}
+body#home {background: url('images/circuit.jpg') no-repeat center center/cover;}
 
-body.other {background: url('images/wov.png') no-repeat center center/cover fixed;}
+body.other {background: url('images/wov.png') no-repeat center center/cover;}
 
 nav {
 	position: absolute;
@@ -95,11 +95,10 @@ footer.socialMedia {
 	left: 0%;
 	width: 100%;
 	height: 100px;
-	background: url('images/cork-wallet.png') no-repeat center center/cover fixed;
+	background: url('images/cork-wallet.png') no-repeat center center/cover;
 	color: #000099;
 	text-align: left;
 	display: table;
-	z-index: 1;
 }
 
 p.socialMedia, img.socialMedia {
