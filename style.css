@@ -15,7 +15,7 @@ nav {
 	top: 0%;
 	left: 0%;
 	width: 100%;
-	height: 10%;
+	height: 100px;
 	background: url('images/splash.jpg') no-repeat 65% 65%/cover;
 	text-align: center;
 }
@@ -94,7 +94,7 @@ footer.socialMedia {
 	top: 90%;
 	left: 0%;
 	width: 100%;
-	height: 10%;
+	height: 100px;
 	background: url('images/cork-wallet.png') no-repeat center center/cover;
 	color: #000099;
 	text-align: left;
