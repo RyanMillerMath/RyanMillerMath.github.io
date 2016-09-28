@@ -4,11 +4,11 @@ html {
 	height: 100%;
 }
 
-body {overflow: hidden;}
+body {overflow: hidden; z-index: 0;}
 
-body#home {background: url('images/circuit.jpg') no-repeat center center/cover;}
+body#home {background: url('images/circuit.jpg') no-repeat center center/cover fixed;}
 
-body.other {background: url('images/wov.png') no-repeat center center/cover;}
+body.other {background: url('images/wov.png') no-repeat center center/cover fixed;}
 
 nav {
 	position: absolute;
@@ -83,7 +83,7 @@ aside > img {
 figure {margin-left: -2.5%;}
 
 figure img {
-	width: 320px;/*2*/
+	width: 320px;
 	height: 180.9375px;
 }
 
