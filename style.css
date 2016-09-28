@@ -1,10 +1,14 @@
-html {font-size: 16px;}
+html {
+	font-size: 16px;
+	width: 100%;
+	height: 100%;
+}
 
 body {overflow: hidden;}
 
-body#home {background: url('images/circuit.jpg') no-repeat center center/cover fixed;}
+body#home {background: url('images/circuit.jpg') no-repeat center center/cover;}
 
-body.other {background: url('images/wov.png') no-repeat center center/cover fixed;}
+body.other {background: url('images/wov.png') no-repeat center center/cover;}
 
 nav {
 	position: absolute;
@@ -33,7 +37,7 @@ a.navbar {
 	color: #ccffff;
 }
 
-a.navbar:hover{color: silver;}
+a.navbar:hover {color: silver;}
 
 header.title {
 	position: absolute;
