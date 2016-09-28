@@ -99,6 +99,7 @@ footer.socialMedia {
 	color: #000099;
 	text-align: left;
 	display: table;
+	z-index: 1;
 }
 
 p.socialMedia, img.socialMedia {
