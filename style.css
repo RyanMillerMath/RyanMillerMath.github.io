@@ -63,7 +63,6 @@ section {
 	left: 40%;
 	width: 700px;
 	margin-left: -350px;
-	float: left;
 }
 
 section#edu {left: 50%;}
@@ -74,7 +73,6 @@ aside {
 	position: absolute;
 	top: 206.25px;
 	left: 72.5%;
-	float: right;
 }
 
 aside > img {
