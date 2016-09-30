@@ -63,6 +63,7 @@ section {
 	left: 40%;
 	width: 700px;
 	margin-left: -350px;
+	overflow: auto;
 }
 
 section#edu {left: 50%;}
@@ -71,6 +72,7 @@ section a:hover {color: black;}
 
 aside {
 	position: absolute;
+	float: right;
 	top: 206.25px;
 	left: 72.5%;
 }
