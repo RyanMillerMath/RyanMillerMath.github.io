@@ -4,8 +4,6 @@ html {
 	height: 100%;
 }
 
-body {overflow: hidden;}
-
 body#home {background: url('images/circuit.jpg') no-repeat center center/cover;}
 
 body.other {background: url('images/wov.png') no-repeat center center/cover;}
@@ -51,7 +49,7 @@ header.title {
 	text-align: center;
 }
 
-main , section a {
+main, section a {
 	color: #000099;
 	font-family: Gafata, serif;
 	font-size: 1.3125rem;
@@ -61,8 +59,8 @@ section {
 	position: absolute;
 	top: 187.5px;
 	left: 40%;
-	width: 70%;
-	margin-left: -35%;
+	width: 60%;
+	margin-left: -30%;
 }
 
 section#edu {left: 50%;}
@@ -119,4 +117,4 @@ img.socialMedia {
 
 img#linkedIn {width: 70px;}
 
-img#mail {transform: translateY(-7.5%);}
+img#mail {margin-top: 10%;}
