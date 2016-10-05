@@ -4,9 +4,9 @@ html {
 	height: 100%;
 }
 
-body#home {background: url('images/circuit.jpg') no-repeat center center/cover;}
+body#home {background: url('images/circuit.jpg') no-repeat center center/cover fixed;}
 
-body.other {background: url('images/wov.png') no-repeat center center/cover;}
+body.other {background: url('images/wov.png') no-repeat center center/cover fixed;}
 
 nav {
 	position: absolute;
