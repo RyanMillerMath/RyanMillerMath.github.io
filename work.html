@@ -2,66 +2,55 @@
 <html lang="en-US">
 	<head>
 		<meta charset="utf-8">
-		<meta name="description" content="This is the personal/professional website for Ryan L. Miller.">
-		<meta name="keywords" content="Ryan, Miller, Ryan Miller, Ryan L Miller">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ryan Miller - Work</title>
+		<meta name="description" content="personal/professional website for Ryan Miller">
+		<meta name="keywords" content="ryan miller developer, ryan l miller developer, miller developer">
 		<meta name="author" content="Ryan Miller">
-		<link href="style.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Gafata" rel="stylesheet">
-		<title>Ryan Miller</title>
+		<link href="style.css" rel="stylesheet">
 	</head>
 
-	<body class="other">
-		<nav class='navbar'>
-			<ul class='navbar'>
-				<li class='navbar'><a class='navbar' href="https://ryanmillermath.github.io/bio">Bio</a></li>
-				<li class='navbar'><a class='navbar' href="https://ryanmillermath.github.io/work">Work/Current Projects</a></li>
-				<li class='navbar'><a class='navbar' href="https://ryanmillermath.github.io/education">Education</a></li>
+	<body class="vertbox viewport">
+		<header class="horizbox primary-header row" role="banner">
+			<h1 class="logo">R<span>M</span></h1>
+			<ul class="social-media">
+				<li><a href="mailto:ryan.l.miller.224@gmail.com">
+					<img src='images/email.png' alt="email">
+				</a></li><!--
+				--><li><a href="https://www.linkedin.com/in/ryanmiller224">
+					<img src='images/linkedIn.png' alt="LinkedIn">
+				</a></li><!--
+				--><li><a href="https://github.com/ryanmillermath">
+					<img src='images/github.png' alt="GitHub">
+				</a></li>
 			</ul>
-		</nav>
-
-		<header class="title">
-			Work/Current Projects
-			<hr />
+			<nav class="primary-nav nav" role="navigation">
+				<ul>
+					<li><a href="https://ryanmillermath.github.io/index">Home</a></li><!--
+					--><li><a href="https://ryanmillermath.github.io/bio">Bio</a></li><!--
+					--><li><a href="https://ryanmillermath.github.io/portfolio">Portfolio</a></li><!--
+					--><li><a href="https://ryanmillermath.github.io/resume">R&#233;sum&#233;</a></li>
+				</ul>
+			</nav>
 		</header>
 
-		<main>
-			<section>
+		<main class="container vertbox" role="main">
+			<header class="title" role="heading">
+				<h1>Work</h1>
+			</header>
+
+			<section role="region">
 				<p>As a software developer at a tech start up, I became well-versed in working independently and with a small team to meet strict deadlines no matter what, whether working any amount of extra hours for no extra pay or serving numerous roles in development. This also required me to pick up several new technologies and figure them out, regarding both software and hardware. Some of my contributions included working with Google's Tango and its API, using quaternions to rotate a steering wheel in a virtual reality car, and some very minor dabbling in the Arduino's C++ library for sensors in an automated aeroponics system.</p>
 
 				<p>My biggest contribution was a data visualization platform, which took electromagnetic field data from electrical engineering software and visualized it in virtual reality. For this project, I constructed a parser to read the vector field data, which was stored from the software as a CVS file. I then established a voxel engine that created custom-built voxels pointing in the appropriate vector directions to visualize the data.</p>
 
 				<p>Two current projects I'm working on are an automated lawnmower and a mobile education app. With the automated lawnmower, I aim to produce the first automated lawnmower that doesn't require any assembly out of the box. My secret recipe: it's also technically bladeless. With the education app, I seek to teach math topics ranging from beginner to advanced since all the current math "education" apps on the market focus almost purely on speed arithmetic and not truly useful knowledge. If the app becomes popular when it's complete, I plan on branching it into other fields, i.e. coding, physics, history, etc., making it a versatile, all-encompassing source of self-education and/or guidance.</p>
 			</section>
-
-			<aside>
-				<figure>
-					<img src="images/work1.jpg" alt="crowd using product" />
-					<figcaption>products I helped fabricate grabbing attention from crowds of all ages at a tech fair</figcaption>
-				</figure>
-				<figure id="work2">
-					<img src="images/work2.jpg" alt="crowd using product" />
-					<figcaption>engineers at Motorola testing aforementioned data visualization platform</figcaption>
-				</figure>
-			</aside>
 		</main>
 
-		<footer class="socialMedia">
-			<p class="socialMedia">Contact Info/Social Media</p>
-
-			<p class="socialMedia">Email: </p>
-			<a href="mailto:ryan.l.miller.224@gmail.com">
-				<img class="socialMedia" id='mail' src='images/gmail.ico' alt="email" />
-			</a>
-
-			<p class="socialMedia">LinkedIn: </p>
-			<a href="https://www.linkedin.com/in/ryanmiller224">
-				<img class="socialMedia" id='linkedIn' src='images/linkedin.png' alt="LinkedIn" />
-			</a>
-
-			<p class="socialMedia">GitHub: </p>
-			<a href="https://github.com/ryanmillermath">
-				<img class="socialMedia" src='images/github.png' alt="GitHub" />
-			</a>
+		<footer class="primary-footer row horizbox" role="contentinfo">
+			<small>&copy;Ryan Miller. All rights reserved.</small>
 		</footer>
 	</body>
 </html>

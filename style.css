@@ -1,120 +1,348 @@
-html {
-	font-size: 16px;
-	width: 100%;
-	height: 100%;
+/*
+  ========================================
+  CSS Reset
+  ========================================
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
 }
 
-body#home {background: url('images/circuit.jpg') no-repeat center center/cover;}
+/*
+  ========================================
+  Base Styles
+  ========================================
+*/
 
-body.other {background: url('images/wov.png') no-repeat center center/cover;}
+body {
+	background: #BBE5A3;			/*background for Opera Mini, which doesn't support gradients*/
+	background: radial-gradient(circle, #CFF09E 5%, #A8DBA8 60%);
+  color: #0B486B;
+  font: 100%/1.4em "Gafata", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
-nav {
-	position: absolute;
-	top: 0%;
-	left: 0%;
-	width: 100%;
-	height: 100px;
-	background: url('images/splash.jpg') no-repeat 65% 65%/cover;
+/*
+  ========================================
+  Base Layout
+  ========================================
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+.container {
+	margin: 0 auto;
+  max-width: 960px;
+	flex: 1;
+}
+
+.vertbox,
+.horizbox {
+	display: flex;
+}
+
+.vertbox {
+	flex-flow: column;
+}
+
+.logo,
+.social-media,
+.primary-nav {
+   flex: 1;
+}
+
+.primary-header,
+.title {
 	text-align: center;
 }
 
-ul.navbar {
-	list-style-type: none;
-	padding-top: .75rem;
+.primary-header,
+.primary-footer {
+	min-height: 75px;
+	align-items: center;
 }
 
-li.navbar {
-	display: inline;
-	margin: 2.5% 2.5% 2.5% 2.5%;
+.primary-footer {
+	justify-content: center;
 }
 
-a.navbar {
-	text-decoration: none;
-	font-size: 2.5rem;
-	font-family: 'Great Vibes', serif;
-	color: #ccffff;
+.title {
+	align-self: center;
 }
 
-a.navbar:hover {color: silver;}
-
-header.title {
-	position: absolute;
-	top: 125px;
-	left: 50%;
-	width: 900px;
-	margin-left: -450px;
-	font-family: "Great Vibes", serif;
-	color: #000099;
-	font-size: 2.25rem;
-	text-align: center;
+.nav li,
+.social-media li {
+  display: inline-block;
 }
 
-main, section a {
-	color: #000099;
-	font-family: Gafata, serif;
-	font-size: 1.3125rem;
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row {
+  background: #0B486B;
+}
+
+/*
+  ========================================
+  Borders
+  ========================================
+*/
+
+.self,
+section {
+	border: 5px solid #0B486B;
 }
 
 section {
-	position: absolute;
-	top: 187.5px;
-	left: 40%;
-	width: 60%;
-	margin-left: -30%;
+	border-radius: 10px 10px 50px 50px;
+	border-width: 0 3.75px;
+	padding: 0 10px 17.5px 10px;
 }
 
-section#edu {left: 50%;}
+/*
+  ========================================
+  Typography
+  ========================================
+*/
 
-section a:hover {color: black;}
 
-aside {
-	position: absolute;
-	top: 206.25px;
-	left: 72.5%;
+.primary-header,
+.title,
+.primary-footer {
+	font-family: "Great Vibes", cursive;
+}
+.primary-header,
+.primary-footer {
+	color: #79BD9A;
+}
+.title {
+  font-size: 2.25em;
+  line-height: 2.75rem;
+}
+p {
+	font-size: 1em;
+}
+@media screen and (min-width:321px) and (max-width:768px) {
+	p {
+		font-size: 1.25em;
+	}
+}
+@media only screen and (min-width:769px) {
+	p {
+		font-size: 1.5em;
+	}
+}
+small {
+	font-size: 1em;
+}
+@media screen and (min-width:321px) and (max-width:768px) {
+	p {
+		font-size: 1.25em;
+	}
+}
+@media only screen and (min-width:769px) {
+	p {
+		font-size: 1.5em;
+	}
 }
 
-aside > img {
-	width: 272px;
-	height: 458px;
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+a {
+  color: #0B486B;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #3B8686;
+}
+p a {
+  text-decoration: underline;
+}
+.primary-header a,
+.primary-footer a {
+  color: #79BD9A;
+}
+.primary-header a:hover,
+.primary-footer a:hover,
+.primary-header a:focus,
+.primary-footer a:focus {
+  color: #648880;
 }
 
-figure {margin-left: -2.5%;}
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
 
-figure img {
-	width: 320px;
-	height: 180.9375px;
-}
-
-figure#work2 {margin-top: 15%;}
-
-footer.socialMedia {
-	position: absolute;
-	top: 90%;
-	left: 0%;
+.nav li {
+	font-size: 1.375em;
 	width: 100%;
-	height: 100px;
-	background: url('images/cork-wallet.png') no-repeat center center/cover;
-	color: #000099;
-	text-align: left;
-	display: table;
+}
+@media screen and (max-width: 910px) {
+	.nav li {
+		padding: 5px 0;
+	}
+	.nav li:first-child {
+	  margin-top: 7.5px;
+	}
+	.nav li:last-child {
+	  margin-bottom: 2.5px;
+	}
+}
+@media screen and (min-width: 910px) {
+	.nav li {
+		width: initial;
+		padding: 0 6.25px 2.5px 6.25px;
+	}
 }
 
-p.socialMedia, img.socialMedia {
-	display: table-cell;
-	vertical-align: middle;
+/*
+  ========================================
+  Primary Header
+  ========================================
+*/
+
+.logo {
+  font-size: 36px;
+  letter-spacing: -0.1875em;
+  padding: 25px 0 25px 0;
+}
+.logo::first-letter {
+	vertical-align: 0.3125em;
+}
+.logo span {
+	vertical-align: -0.3125em;
+}
+.social-media li {
+  padding: 0 8.75px 10px 8.75px;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+	.social-media li:first-child {
+	  margin-top: 7.5px;
+	}
+}
+@media screen and (min-width: 600px) {
+	.social-media li {
+		width: initial;
+	}
+}
+.primary-nav {
+	font-size: 1.25em;
 }
 
-p.socialMedia {
-	font-size: 1.25rem;
-	text-align: center;
+/*
+  ========================================
+  Secondary Header
+  ========================================
+*/
+
+.title {
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 2.5px;
+	font-weight: 600;
 }
 
-img.socialMedia {
-	height: 64px;
-	width: 64px;
-	margin-top: 8.75%;
+.title::first-letter {
+	letter-spacing: 3.75px;
 }
 
-img#linkedIn {width: 70px;}
+/*
+  ========================================
+  Primary Footer
+  ========================================
+*/
 
-img#mail {margin-top: 10%;}
+.primary-footer {
+  font-size: 1.375em;
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+.intro {
+	padding-bottom: 0;
+}
+
+.self {
+	margin: auto auto 1px auto;
+	border-radius: 50%;
+}
+
+/*
+  ========================================
+  Bio
+  ========================================
+*/
+
+/*
+  ========================================
+  Work
+  ========================================
+*/
+
+/*
+  ========================================
+  Resume
+  ========================================
+*/
