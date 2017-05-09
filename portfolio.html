@@ -3,18 +3,18 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Ryan Miller - Work</title>
+		<title>Ryan Miller - Portfolio</title>
 		<meta name="description" content="personal/professional website for Ryan Miller">
 		<meta name="keywords" content="ryan miller developer, ryan l miller developer, miller developer">
 		<meta name="author" content="Ryan Miller">
 		<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Gafata" rel="stylesheet">
-		<link href="style.css" rel="stylesheet">
+		<link href="stylesheets/styles.min.css" rel="stylesheet">
 	</head>
 
 	<body class="vertbox viewport">
-		<header class="horizbox primary-header row" role="banner">
-			<h1 class="logo">R<span>M</span></h1>
-			<ul class="social-media">
+		<header class="horizbox primary-header row cross-axis-center center-align" role="banner">
+			<h1 class="logo flex-1">R<span>M</span></h1>
+			<ul class="social-media flex-1">
 				<li><a href="mailto:ryan.l.miller.224@gmail.com">
 					<img src='images/email.png' alt="email">
 				</a></li><!--
@@ -25,31 +25,28 @@
 					<img src='images/github.png' alt="GitHub">
 				</a></li>
 			</ul>
-			<nav class="primary-nav nav" role="navigation">
+			<nav class="nav flex-1" role="navigation">
 				<ul>
-					<li><a href="https://ryanmillermath.github.io/">Home</a></li><!--
-					--><li><a href="https://ryanmillermath.github.io/bio">Bio</a></li><!--
+					<li><a href="https://ryanmillermath.github.io/index">Home</a></li><!--
 					--><li><a href="https://ryanmillermath.github.io/portfolio">Portfolio</a></li><!--
 					--><li><a href="https://ryanmillermath.github.io/resume">R&#233;sum&#233;</a></li>
 				</ul>
 			</nav>
 		</header>
 
-		<main class="container vertbox" role="main">
-			<header class="title" role="heading">
+		<main class="container vertbox flex-1" role="main">
+			<header class="title center-align" role="heading">
 				<h1>Portfolio</h1>
 			</header>
 
-			<section role="region">
-				<p>As a software developer at a tech start up, I became well-versed in working independently and with a small team to meet strict deadlines no matter what, whether working any amount of extra hours for no extra pay or serving numerous roles in development. This also required me to pick up several new technologies and figure them out, regarding both software and hardware. Some of my contributions included working with Google's Tango and its API, using quaternions to rotate a steering wheel in a virtual reality car, and some very minor dabbling in the Arduino's C++ library for sensors in an automated aeroponics system.</p>
+			<section class="flex-1" role="region">
+				<p>Other than school assignments and a myriad of online exercises I've worked through (, Shay Howe's HTML/CSS workshop and advanced HTML/CSS guide, and every exercise at Codecademy, to name a few), this website is my entire web development portfolio...but not for long!</p>
 
-				<p>My biggest contribution was a data visualization platform, which took electromagnetic field data from electrical engineering software and visualized it in virtual reality. For this project, I constructed a parser to read the vector field data, which was stored from the software as a CVS file. I then established a voxel engine that created custom-built voxels pointing in the appropriate vector directions to visualize the data.</p>
-
-				<p>Two current projects I'm working on are an automated lawnmower and a mobile education app. With the automated lawnmower, I aim to produce the first automated lawnmower that doesn't require any assembly out of the box. My secret recipe: it's also technically bladeless. With the education app, I seek to teach math topics ranging from beginner to advanced since all the current math "education" apps on the market focus almost purely on speed arithmetic and not truly useful knowledge. If the app becomes popular when it's complete, I plan on branching it into other fields, i.e. coding, physics, history, etc., making it a versatile, all-encompassing source of self-education and/or guidance.</p>
+				<p>As I get more projects under my belt, I'll change this into an interactive horizontal scrollbar to scroll through screenshots, gifs, or videos of projects. Be sure to keep an eye on my GitHub if you're interested.</p>
 			</section>
 		</main>
 
-		<footer class="primary-footer row horizbox" role="contentinfo">
+		<footer class="horizbox primary-footer row main-axis-center cross-axis-center center-align" role="contentinfo">
 			<small>&copy;Ryan Miller. All rights reserved.</small>
 		</footer>
 	</body>

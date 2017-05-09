@@ -48,10 +48,25 @@ ol, ul {
 */
 
 body {
-	background: #BBE5A3;			/*background for Opera Mini, which doesn't support gradients*/
 	background: radial-gradient(circle, #CFF09E 5%, #A8DBA8 60%);
   color: #0B486B;
   font: 100%/1.4em "Gafata", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+  ========================================
+  Base Borders
+  ========================================
+*/
+
+.self,
+section {
+  border: 5px solid #0B486B;
+}
+
+section {
+  border-radius: 10px 10px 50px 50px;
+  border-width: 0 3.75px;
 }
 
 /*
@@ -68,9 +83,8 @@ body {
   min-height: 100vh;
 }
 
-img {
-   max-width: 100%;
-   height: auto;
+section {
+  padding: 0 10px;
 }
 
 p {
@@ -80,7 +94,6 @@ p {
 .container {
 	margin: 0 auto;
   max-width: 960px;
-	flex: 1;
 }
 
 .vertbox,
@@ -92,34 +105,31 @@ p {
 	flex-flow: column;
 }
 
-.logo,
-.social-media,
-.primary-nav {
+.flex-1 {
    flex: 1;
 }
 
-.primary-header,
-.title {
+.main-axis-center {
+  justify-content: center;
+}
+
+.cross-axis-center {
+  align-items: center;
+}
+
+.center-align {
 	text-align: center;
 }
 
-.primary-header,
-.primary-footer {
-	min-height: 75px;
-	align-items: center;
-}
+/*
+  ========================================
+  Responsive Media
+  ========================================
+*/
 
-.primary-footer {
-	justify-content: center;
-}
-
-.title {
-	align-self: center;
-}
-
-.nav li,
-.social-media li {
-  display: inline-block;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*
@@ -129,24 +139,8 @@ p {
 */
 
 .row {
+  min-height: 75px;
   background: #0B486B;
-}
-
-/*
-  ========================================
-  Borders
-  ========================================
-*/
-
-.self,
-section {
-	border: 5px solid #0B486B;
-}
-
-section {
-	border-radius: 10px 10px 50px 50px;
-	border-width: 0 3.75px;
-	padding: 0 10px 17.5px 10px;
 }
 
 /*
@@ -155,42 +149,34 @@ section {
   ========================================
 */
 
-
 .primary-header,
 .title,
 .primary-footer {
 	font-family: "Great Vibes", cursive;
 }
+
 .primary-header,
 .primary-footer {
 	color: #79BD9A;
 }
+
 .title {
   font-size: 2.25em;
   line-height: 2.75rem;
+  font-weight: 600;
 }
-p {
+
+p, small {
 	font-size: 1em;
 }
-@media screen and (min-width:321px) and (max-width:768px) {
+
+@media screen and (min-width:600px) {
 	p {
 		font-size: 1.25em;
 	}
 }
-@media only screen and (min-width:769px) {
-	p {
-		font-size: 1.5em;
-	}
-}
-small {
-	font-size: 1em;
-}
-@media screen and (min-width:321px) and (max-width:768px) {
-	p {
-		font-size: 1.25em;
-	}
-}
-@media only screen and (min-width:769px) {
+
+@media only screen and (min-width:961px) {
 	p {
 		font-size: 1.5em;
 	}
@@ -206,21 +192,59 @@ a {
   color: #0B486B;
   text-decoration: none;
 }
+
 a:hover,
 a:focus {
   color: #3B8686;
 }
+
 p a {
   text-decoration: underline;
 }
+
 .primary-header a,
 .primary-footer a {
   color: #79BD9A;
 }
+
 .primary-header a:hover,
 .primary-footer a:hover,
 .primary-header a:focus,
 .primary-footer a:focus {
+  color: #648880;
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.btn-default {
+  border: 0;
+  background: #648880;
+  padding: 11px 30px;
+  font-size: 14px;
+}
+.btn-default:hover {
+  background: #77a198;
+}
+.btn-alt {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+}
+.btn-alt:hover {
+  background: #fff;
   color: #648880;
 }
 
@@ -231,12 +255,13 @@ p a {
 */
 
 .nav li {
-	font-size: 1.375em;
+	font-size: 1.71875em;
 	width: 100%;
 }
-@media screen and (max-width: 910px) {
+
+@media screen and (max-width: 775px) {
 	.nav li {
-		padding: 5px 0;
+		padding: 6.25px 0;
 	}
 	.nav li:first-child {
 	  margin-top: 7.5px;
@@ -245,10 +270,11 @@ p a {
 	  margin-bottom: 2.5px;
 	}
 }
-@media screen and (min-width: 910px) {
+
+@media screen and (min-width: 775px) {
 	.nav li {
 		width: initial;
-		padding: 0 6.25px 2.5px 6.25px;
+		padding: 0 6.25px;
 	}
 }
 
@@ -261,30 +287,37 @@ p a {
 .logo {
   font-size: 36px;
   letter-spacing: -0.1875em;
-  padding: 25px 0 25px 0;
+  padding: 25px 0;
 }
+
 .logo::first-letter {
 	vertical-align: 0.3125em;
 }
+
 .logo span {
 	vertical-align: -0.3125em;
 }
+
+.nav li,
+.social-media li {
+  display: inline-block;
+}
+
 .social-media li {
   padding: 0 8.75px 10px 8.75px;
   width: 100%;
 }
+
 @media screen and (max-width: 600px) {
 	.social-media li:first-child {
 	  margin-top: 7.5px;
 	}
 }
+
 @media screen and (min-width: 600px) {
 	.social-media li {
 		width: initial;
 	}
-}
-.primary-nav {
-	font-size: 1.25em;
 }
 
 /*
@@ -294,14 +327,7 @@ p a {
 */
 
 .title {
-	width: 100%;
-	margin-top: 5px;
-	margin-bottom: 2.5px;
-	font-weight: 600;
-}
-
-.title::first-letter {
-	letter-spacing: 3.75px;
+	margin-top: 10px;
 }
 
 /*
@@ -320,24 +346,18 @@ p a {
   ========================================
 */
 
-.intro {
-	padding-bottom: 0;
+.home-title::first-letter {
+  letter-spacing: 3.75px;
 }
 
 .self {
-	margin: auto auto 1px auto;
-	border-radius: 50%;
+  margin: 0 auto -5px auto;
+  border-radius: 50%;
 }
 
 /*
   ========================================
-  Bio
-  ========================================
-*/
-
-/*
-  ========================================
-  Work
+  Portfolio
   ========================================
 */
 
