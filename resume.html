@@ -8,24 +8,29 @@
 		<meta name="keywords" content="ryan miller developer, ryan l miller developer, miller developer">
 		<meta name="author" content="Ryan Miller">
 		<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Gafata" rel="stylesheet">
-		<link href="stylesheets/styles.min.css" rel="stylesheet">
+		<link href="assets/stylesheets/styles.css" rel="stylesheet">
+		<meta name="google" content="notranslate">
 	</head>
 
 	<body class="vertbox viewport">
-		<header class="horizbox primary-header row cross-axis-center center-align" role="banner">
-			<h1 class="logo flex-1">R<span>M</span></h1>
-			<ul class="social-media flex-1">
+		<header class="horizbox primary-header row center-align" role="banner">
+			<div class="logo">
+				<a href="https://ryanmillermath.github.io/index">R<span>M</span></a>
+			</div>
+
+			<ul class="social-media">
 				<li><a href="mailto:ryan.l.miller.224@gmail.com">
-					<img src='images/email.png' alt="email">
+					<img src="assets/images/email.png" alt="email">
 				</a></li><!--
 				--><li><a href="https://www.linkedin.com/in/ryanmiller224">
-					<img src='images/linkedIn.png' alt="LinkedIn">
+					<img src="assets/images/linkedIn.png" alt="LinkedIn">
 				</a></li><!--
 				--><li><a href="https://github.com/ryanmillermath">
-					<img src='images/github.png' alt="GitHub">
+					<img src="assets/images/github.png" alt="GitHub">
 				</a></li>
 			</ul>
-			<nav class="nav flex-1" role="navigation">
+
+			<nav class="nav" role="navigation">
 				<ul>
 					<li><a href="https://ryanmillermath.github.io/index">Home</a></li><!--
 					--><li><a href="https://ryanmillermath.github.io/portfolio">Portfolio</a></li><!--
@@ -34,20 +39,140 @@
 			</nav>
 		</header>
 
-		<main class="container vertbox flex-1" role="main">
-			<header class="title center-align" role="heading">
-				<h1>R&#233;sum&#233;</h1>
-			</header>
+		<main class="vertbox container fill-flexbox-remainder" role="main">
+			<div class="center-align">
+				<h1 class="title">R&#233;sum&#233;</h1>
 
-			<section class="flex-1" role="region">
-				<p>I received my B.S. in Mathematics with a minor in Computer Science from <a href="http://cas.loyno.edu/mathematics">Loyola University New Orleans</a>. As a math major, I was very active member of our chapter of the mathematical honor society Pi Mu Epsilon, taking part in competitions and conventions and giving several lectures both on and off campus. As a computer science minor, I was the only computer science tutor on campus and was one of two students active in helping the department reestablishing the Computer Information Systems major that had been removed after Hurricane Katrina from the groundwork of the Computer Science minor.</p>
+				<a class="btn" href="assets/resume.pdf" download="Ryan Miller's Resume">Download R&#233;sum&#233;</a>
 
-				<p>At Loyola, I was privileged to work as  <a href="http://cas.loyno.edu/mathematics/research/zero-divisor-graphs">a research assistant with Dr. Ralph Tucci</a>, who was impressed with my innate ability in problem solving. Initially starting as a grant-funded project, I worked with Dr. Tucci for two years, which garnered two academic papers. In our first publication <a href="http://scientificadvances.co.in/admin/img_data/974/images/JANTAA7100121521RyanL.Miller.pdf">Zero-Divisor Graphs of Finite Direct Products of Finite Non-Commutative Rings and Semigroups</a>, I was responsible for the program that tested the result of the paper, which I initially coded in C++ but redid in MATLAB for the paper. For our second paper, Uniqueness of Z<sub>m</sub>, which hasn't yet been published, I proved all results in the paper, had them checked by Dr. Tucci, and typed the paper in LaTeX.</p>
+				<p><strong>CAVEAT:</strong> The downloadable resume is laid out differently with an abbreviated education section for the concision to fit it on one page.</p>
+			</div>
+
+			<section class="fill-flexbox-remainder" role="region">
+				<ul>
+					<li class="horizbox resume-section">
+				<!-- Exposure: -->
+						<h2 class="col-1-3 resume-leads">Technologies</h2>
+						<ul class="col-1-3 middle-column">
+							<li>
+								<h3>Proficient</h3>
+							</li> 
+							<li>C++</li>
+							<li>Java</li>
+							<li>Python</li>
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>JavaScript</li>
+							<li>SQL (SQLite, MySQL, DB2)</li>
+							<li>Ruby</li>
+							<li>Git</li>
+							<li>jQuery</li>
+							<li>JSON</li>
+							<li>NumPy</li>
+							<li>SciPy</li>
+							<li>MS Office</li>
+						</ul>
+						<ul class="col-1-3">
+							<li>
+								<h3>Exposed/Minor Experience</h3>
+							</li>
+							<li>PHP</li>
+							<li>C#.NET</li>
+							<li>REST APIs</li>
+							<li>MVC</li>
+							<li>Angular</li>
+							<li>React</li>
+							<li>Ruby on Rails</li>
+							<li>HAML</li>
+							<li>LESS</li>
+							<li>Sass</li>
+							<li>AJAX</li>
+							<li>XML</li>
+							<li>Android Studio</li>
+							<li>Xcode</li>
+							<li>Gradle</li>
+						</ul>
+					</li>
+
+					<li class="horizbox resume-section">
+						<h2 class="col-1-3 resume-leads">Work &#43; Education</h2>
+						<ul class="col-2-3">
+							<li>
+								<div class="center-align">
+									<h3>Freelance Tutoring <br> Tutor</h3>
+									<h4>New Orleans, LA <br>Feb 2016 - Present</h4>
+								</div>
+								<ul class="bulleted">
+									<li>Tutoring all levels of college math, freshman to junior level computer science, and freshman level physics.</li>
+								</ul>
+							</li>
+							<li>
+								<div class="center-align">
+									<h3>Freelance Tutoring <br> Software Developer</h3>
+									<h4>New Orleans, LA <br>Feb 2015 - Feb 2016</h4>
+								</div>
+								<ul class="bulleted">
+									<li>Engineered virtual reality (VR) applications with a team of three other developers.</li>
+									<li>Operated as sole designer and developer of a Windows application built in Python which parsed large engineering data files (up to 7GB) into 3D visualizations for use in VR.</li>
+									<li>Created a voxel engine from scratch for the 3D visualizations.</li>
+									<li>Constructed a library in C# to handle tables of data mirroring Python's pandas data analysis package.</li>
+									<li>Served as sole problem solver in any high-level math problems that arose during development.</li>
+									<li>Employed mathematical education for both 2D and 3D coordinate geometry.</li>
+									<li>Utilized Git for version control during development.</li>
+									<li>Addressed weekly updates to applications based on customer feedback.</li>
+									<li>Learned Unix/Linux command line and worked in Linux Ubuntu for some projects.</li>
+									<li>Exposed to C# and Mono as used by Unity Engine for coding visual components into VR applications, using C++ for the Arduino microcontroller, and Windows command and PowerShell scripting.</li>
+								</ul>
+							</li>
+							<li>
+								<div class="center-align">
+									<h3>Loyola University New Orleans <br> Math Center Tutor</h3>
+									<h4>New Orleans, LA <br>Aug 2014 - May 2015</h4>
+								</div>
+								<ul class="bulleted">
+									<li>Tutored math across all levels but mostly introductory calculus and the core curriculum required math course.</li>
+									<li>Served as the only computer science tutor in the math center.</li>
+								</ul>
+							</li>
+							<li>
+								<div class="center-align">
+									<h3>Loyola University New Orleans <br> Mathematics Researcher</h3>
+									<h4>New Orleans, LA <br>Aug 2014 - May 2015</h4>
+								</div>
+								<ul class="bulleted">
+									<li>Researched <a href="http://cas.loyno.edu/mathematics/research/zero-divisor-graphs">zero divisor graphs</a> under the tutelage of Dr. Ralph Tucci.</li>
+									<li>Received a grant awarded to less than 20% of applicants that required at least one <a href="http://scientificadvances.co.in/admin/img_data/974/images/JANTAA7100121521RyanL.Miller.pdf">publication</a> from and presentation of the research.</li>
+								</ul>
+							</li>
+							<li>
+								<div class="center-align">
+									<h3>Education <br> Loyola University New Orleans</h3>
+									<h4>Class of 2015 <br> B.S. Mathematics</h4>
+								</div>
+								<ul class="bulleted">
+									<li>Received minor in Computer Science.</li>
+									<li>Graduated Cum Laude with a 3.5 GPA.</li>
+									<li>Active member of Pi Mu Epsilon Math Honor Society and the Math Club, giving multiple talks and helping with events around campus.</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li class="horizbox resume-section">
+						<h2 class="col-1-3 resume-leads">Additional Information</h2>
+						<ul class="col-2-3 bulleted">
+							<li>Strong writing and reading comprehension skills, especially with scientific/technical writing</li>
+							<li>Excellent ability to adapt to and creatively think in any type of work environment</li>
+							<li>Quick learner and effective teacher, especially with new software and technologies</li>
+							<li>Demonstrated ability to take constructive criticism in a positive manner</li>
+						</ul>
+					</li>
+				</ul>
 			</section>
 		</main>
 
-		<footer class="horizbox primary-footer row main-axis-center cross-axis-center center-align" role="contentinfo">
-			<small>&copy;Ryan Miller. All rights reserved.</small>
+		<footer class="horizbox primary-footer row" role="contentinfo">
+			<small>&copy;Ryan Miller</small>
 		</footer>
 	</body>
 </html>

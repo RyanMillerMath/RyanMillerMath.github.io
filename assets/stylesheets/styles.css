@@ -53,6 +53,18 @@ body {
   font: 100%/1.4em "Gafata", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+@media screen and (min-width:600px) {
+  body {
+    font-size: 1.125em;
+  }
+}
+
+@media only screen and (min-width:961px) {
+  body {
+    font-size: 1.25em;
+  }
+}
+
 /*
   ========================================
   Base Borders
@@ -105,15 +117,23 @@ p {
 	flex-flow: column;
 }
 
-.flex-1 {
-   flex: 1;
+.logo,
+.social-media,
+.nav,
+.fill-flexbox-remainder {
+  flex: 1;
 }
 
-.main-axis-center {
+.primary-footer {
   justify-content: center;
 }
 
-.cross-axis-center {
+.main-axis-space {
+  justify-content: space-between;
+}
+
+.primary-header,
+.primary-footer {
   align-items: center;
 }
 
@@ -161,25 +181,28 @@ img {
 }
 
 .title {
-  font-size: 2.25em;
+  font-size: 2.25rem;
   line-height: 2.75rem;
-  font-weight: 600;
 }
 
-p, small {
-	font-size: 1em;
+.nav {
+  font-size: 1.71875rem;
 }
 
-@media screen and (min-width:600px) {
-	p {
-		font-size: 1.25em;
-	}
+.btn {
+  font-size: 1rem;
 }
 
-@media only screen and (min-width:961px) {
-	p {
-		font-size: 1.5em;
-	}
+strong,
+h1,
+h2,
+h3,
+.btn {
+  font-weight: bold;
+}
+
+small {
+  font-size: 0.75em;
 }
 
 /*
@@ -195,23 +218,20 @@ a {
 
 a:hover,
 a:focus {
-  color: #3B8686;
+  color: #fff;
 }
 
-p a {
+.resume-section a {
   text-decoration: underline;
 }
 
-.primary-header a,
-.primary-footer a {
+.primary-header a {
   color: #79BD9A;
 }
 
-.primary-header a:hover,
-.primary-footer a:hover,
-.primary-header a:focus,
-.primary-footer a:focus {
-  color: #648880;
+.nav a:hover,
+.nav a:focus {
+  color: #CFF09E;
 }
 
 /*
@@ -221,61 +241,20 @@ p a {
 */
 
 .btn {
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
   display: inline-block;
-  font-weight: 400;
+  border: 2.5px solid #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  background: #3B8686;
+  color: #fff;
   letter-spacing: .5px;
-  margin: 0;
+  margin: 5px 0 11.25px 0;
   text-transform: uppercase;
 }
-.btn-default {
-  border: 0;
-  background: #648880;
-  padding: 11px 30px;
-  font-size: 14px;
-}
-.btn-default:hover {
-  background: #77a198;
-}
-.btn-alt {
-  border: 1px solid #fff;
-  padding: 10px 30px;
-}
-.btn-alt:hover {
+.btn:hover {
   background: #fff;
-  color: #648880;
-}
-
-/*
-  ========================================
-  Navigation
-  ========================================
-*/
-
-.nav li {
-	font-size: 1.71875em;
-	width: 100%;
-}
-
-@media screen and (max-width: 775px) {
-	.nav li {
-		padding: 6.25px 0;
-	}
-	.nav li:first-child {
-	  margin-top: 7.5px;
-	}
-	.nav li:last-child {
-	  margin-bottom: 2.5px;
-	}
-}
-
-@media screen and (min-width: 775px) {
-	.nav li {
-		width: initial;
-		padding: 0 6.25px;
-	}
+  border-color: #3B8686;
+  color: #3B8686;
 }
 
 /*
@@ -301,6 +280,29 @@ p a {
 .nav li,
 .social-media li {
   display: inline-block;
+}
+
+.nav li {
+  width: 100%;
+}
+
+@media screen and (max-width: 775px) {
+  .nav li {
+    padding: 6.25px 0;
+  }
+  .nav li:first-child {
+    margin-top: 7.5px;
+  }
+  .nav li:last-child {
+    margin-bottom: 2.5px;
+  }
+}
+
+@media screen and (min-width: 775px) {
+  .nav li {
+    width: initial;
+    padding: 0 6.25px;
+  }
 }
 
 .social-media li {
@@ -337,7 +339,7 @@ p a {
 */
 
 .primary-footer {
-  font-size: 1.375em;
+  font-size: 1.5em;
 }
 
 /*
@@ -366,3 +368,40 @@ p a {
   Resume
   ========================================
 */
+
+.resume-section {
+  border-bottom: 2.5px solid #0B486B;
+  margin-top: 7.5px;
+  padding-bottom: 5px;
+}
+
+.resume-section:first-child {
+  margin-top: 0;
+}
+
+.resume-section:last-child {
+  border-bottom: 0;
+  margin-bottom: 15px;
+}
+
+.resume-leads {
+  margin-right: 15px;
+}
+
+.middle-column {
+  padding-right: 12.5px;
+}
+
+.bulleted {
+  list-style: disc inside;
+}
+
+/* temporary grid system until display: grid; becomes better supported - only about 65% currently according to caniuse.com */
+
+.col-1-3 {
+  width: calc(100%/3);
+}
+
+.col-2-3 {
+  width: calc(100%/3 * 2);
+}
