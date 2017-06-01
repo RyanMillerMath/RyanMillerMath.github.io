@@ -109,10 +109,9 @@ main {
 	flex-flow: column;
 }
 
-.logo,
+.logo-wrapper,
 .social-media,
 .nav,
-small,
 .fill-flexbox-remainder {
   flex: 1;
 }
@@ -169,9 +168,9 @@ img {
 	color: #79BD9A;
 }
 
+.logo,
 .title {
   font-size: 2.25rem;
-  line-height: 2.75rem;
 }
 
 .nav {
@@ -253,27 +252,41 @@ a:focus {
   ========================================
 */
 
-.logo {
-  font-size: 2.25rem;
-  letter-spacing: -0.1875em;
-  padding: 25px 0;
-}
-
-.logo::first-letter {
-	vertical-align: 0.3125em;
-}
-
-.logo span {
-	vertical-align: -0.3125em;
-}
-
-.nav li {
+.primary-header svg {
+  fill: currentColor;
   width: 100%;
+}
+
+.logo-wrapper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 84px;
+  height: 65px;
+  margin: 0 auto;
 }
 
 .nav li,
 .social-media li {
   display: inline-block;
+}
+
+.social-media {
+  padding-top: 10px;
+}
+
+.social-media li {
+  padding: 0 6.25px;
+}
+
+.social-media svg {
+  max-width: 32px;
+}
+
+.nav li {
+  width: 100%;
 }
 
 @media screen and (max-width: 775px) {
@@ -295,16 +308,6 @@ a:focus {
   }
 }
 
-.social-media {
-  min-width: 140px;
-  padding-left: 15px;
-}
-
-.social-media li {
-  font-size: 1.6em;
-  padding: 0 6.25px;
-}
-
 /*
   ========================================
   Secondary Header
@@ -313,6 +316,7 @@ a:focus {
 
 .title {
 	margin-top: 10px;
+  line-height: 2.75rem;
 }
 
 /*
