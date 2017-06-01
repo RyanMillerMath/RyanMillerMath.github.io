@@ -75,7 +75,7 @@ body {
 
 /*
   ========================================
-  Base Layout
+  Base Layout/Flexbox Set Up
   ========================================
 */
 
@@ -98,6 +98,10 @@ p {
 main {
 	margin: 0 auto;
   max-width: 960px;
+}
+
+.center-align {
+  text-align: center;
 }
 
 .vertbox,
@@ -123,10 +127,6 @@ main {
 .primary-header,
 .primary-footer {
   align-items: center;
-}
-
-.center-align {
-	text-align: center;
 }
 
 /*
