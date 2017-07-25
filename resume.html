@@ -8,7 +8,7 @@
 		<meta name="keywords" content="ryan miller developer, ryan l miller developer, miller developer">
 		<meta name="author" content="Ryan Miller">
 		<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Gafata" rel="stylesheet">
-		<link href="assets/stylesheets/styles.min.css" rel="stylesheet">
+		<link href="assets/stylesheets/styles.css" rel="stylesheet">
 		<meta name="google" content="notranslate">
 	</head>
 
@@ -20,7 +20,7 @@
 
 			<!-- Logo -->
 
-			<div class="logo-wrapper">
+			<div class="logo-wrapper col-1-3">
 				<div class="logo">
 					<svg>
 						<text x="0" y="35">
@@ -37,8 +37,8 @@
 
 			<!-- Social Media -->
 
-			<ul class="social-media">
-				<li>
+			<ul class="social-media col-1-3">
+				<li class="email">
 					<a href="mailto:ryan.l.miller.224@gmail.com">
 						<svg viewBox="0 0 32 32"><path d="M0 23.67L0 0L32 0L32 23.67L0 23.67ZM20.43 12.19L15.98 15.59L11.51 12.17L2.73 20.95L29.18 20.95L20.43 12.19ZM29.27 17.18L29.27 5.42L22.61 10.52L29.27 17.18ZM9.34 10.5L2.71 5.42L2.71 17.13L9.34 10.5ZM15.99 12.17L28.37 2.7L3.62 2.7L15.99 12.17Z"></svg>
 					</a>
@@ -57,7 +57,7 @@
 
 			<!-- Primary Navigation -->
 
-			<nav class="nav" id="nav" role="navigation">
+			<nav class="nav col-1-3" id="nav" role="navigation">
 				<ul>
 					<li><a href="https://ryanmillermath.github.io/index">Home</a></li><!--comment out space between elements for inline block
 					--><li><a href="https://ryanmillermath.github.io/portfolio">Portfolio</a></li><!--comment out space between elements for inline block
@@ -77,49 +77,45 @@
 
 				<a class="btn" href="assets/media/resume.pdf" download="Ryan Miller's Resume" role="button">Download R&#233;sum&#233;</a>
 
-				<p><strong>CAVEAT:</strong> The downloadable resume is laid out differently with an abbreviated education section for the concision to fit it on one page.</p>
+				<p><strong>CAVEAT:</strong> This r&#233;sum&#233; only contains information relevant to software development. 
+				For a full employment/education history, be sure to visit my LinkedIn.</p>
 			</div>
 
 			<!-- Main Section -->
 
 			<section class="fill-flexbox-remainder" role="region">
 				<ul>
-					<li class="horizbox resume-section">
-						<h2 class="col-1-3 resume-leads">Technologies</h2>
-						<ul class="col-1-3 center-align middle-column">
+					<li class="resume-section">
+						<h2 class="col-1-3 resume-leads">Technologies</h2><!--
+						--><ul class="col-1-3 center-align middle-column">
 							<li>
 								<h3>Proficient</h3>
 							</li> 
+							<li>HTML5</li>
+							<li>CSS3</li>
+							<li>Sass</li>
+							<li>JavaScript</li>
+							<li>jQuery</li>
+							<li>Angular</li>
+							<li>React</li>
+							<li>Git</li>
+							<li>SQL (SQLite, MySQL, DB2)</li>
 							<li>C++</li>
 							<li>Java</li>
 							<li>Python</li>
-							<li>HTML5</li>
-							<li>CSS3</li>
-							<li>JavaScript</li>
-							<li>SQL (SQLite, MySQL, DB2)</li>
-							<li>Ruby</li>
-							<li>Git</li>
-							<li>jQuery</li>
-							<li>JSON</li>
 							<li>NumPy</li>
 							<li>SciPy</li>
-							<li>MS Office</li>
-						</ul>
-						<ul class="col-1-3 center-align">
+						</ul><!--
+						--><ul class="col-1-3 center-align">
 							<li>
 								<h3>Exposed/Minor Experience</h3>
 							</li>
 							<li>PHP</li>
-							<li>C#.NET</li>
-							<li>REST APIs</li>
-							<li>MVC</li>
-							<li>Angular</li>
-							<li>React</li>
+							<li>C#/.NET</li>
+							<li>Ruby</li>
 							<li>Ruby on Rails</li>
 							<li>HAML</li>
 							<li>LESS</li>
-							<li>Sass</li>
-							<li>AJAX</li>
 							<li>XML</li>
 							<li>Android Studio</li>
 							<li>Xcode</li>
@@ -127,21 +123,12 @@
 						</ul>
 					</li>
 
-					<li class="horizbox resume-section">
-						<h2 class="col-1-3 resume-leads">Work &#43; Education</h2>
-						<ul class="col-2-3">
+					<li class="resume-section">
+						<h2 class="col-1-3 resume-leads">Work &#43; Education</h2><!--
+						--><ul class="col-2-3">
 							<li>
 								<div class="center-align">
-									<h3>Freelance Tutoring <br> Tutor</h3>
-									<h4>New Orleans, LA <br>Feb 2016 - Present</h4>
-								</div>
-								<ul class="bulleted">
-									<li>Tutoring all levels of college math, freshman to junior level computer science, and freshman level physics.</li>
-								</ul>
-							</li>
-							<li>
-								<div class="center-align">
-									<h3>Freelance Tutoring <br> Software Developer</h3>
+									<h3>Yotta Technologies <br> Software Developer</h3>
 									<h4>New Orleans, LA <br>Feb 2015 - Feb 2016</h4>
 								</div>
 								<ul class="bulleted">
@@ -159,26 +146,6 @@
 							</li>
 							<li>
 								<div class="center-align">
-									<h3>Loyola University New Orleans <br> Math Center Tutor</h3>
-									<h4>New Orleans, LA <br>Aug 2014 - May 2015</h4>
-								</div>
-								<ul class="bulleted">
-									<li>Tutored math across all levels but mostly introductory calculus and the core curriculum required math course.</li>
-									<li>Served as the only computer science tutor in the math center.</li>
-								</ul>
-							</li>
-							<li>
-								<div class="center-align">
-									<h3>Loyola University New Orleans <br> Mathematics Researcher</h3>
-									<h4>New Orleans, LA <br>Aug 2014 - May 2015</h4>
-								</div>
-								<ul class="bulleted">
-									<li>Researched <a href="http://cas.loyno.edu/mathematics/research/zero-divisor-graphs">zero divisor graphs</a> under the tutelage of Dr. Ralph Tucci.</li>
-									<li>Received a grant awarded to less than 20% of applicants that required at least one <a href="http://scientificadvances.co.in/admin/img_data/974/images/JANTAA7100121521RyanL.Miller.pdf">publication</a> from and presentation of the research.</li>
-								</ul>
-							</li>
-							<li>
-								<div class="center-align">
 									<h3>Education <br> Loyola University New Orleans</h3>
 									<h4>Class of 2015 <br> B.S. Mathematics</h4>
 								</div>
@@ -191,9 +158,9 @@
 						</ul>
 					</li>
 
-					<li class="horizbox resume-section">
-						<h2 class="col-1-3 resume-leads">Additional Information</h2>
-						<ul class="col-2-3 bulleted">
+					<li class="resume-section">
+						<h2 class="col-1-3 resume-leads">Additional Information</h2><!--
+						--><ul class="col-2-3 bulleted">
 							<li>Strong writing and reading comprehension skills, especially with scientific/technical writing</li>
 							<li>Excellent ability to adapt to and creatively think in any type of work environment</li>
 							<li>Quick learner and effective teacher, especially with new software and technologies</li>
