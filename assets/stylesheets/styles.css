@@ -330,6 +330,10 @@ a:focus {
   ========================================
 */
 
+.home-title {
+  padding: 2.5px 0;
+}
+
 .home-title::first-letter {
   letter-spacing: 3.75px;
 }
