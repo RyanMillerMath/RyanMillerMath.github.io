@@ -346,6 +346,10 @@ a:focus {
   ========================================
 */
 
+.collab-message {
+  font-size: 0.8em;
+}
+
 .projects-container {
   position: relative;
   margin: 1.33em 0;
