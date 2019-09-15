@@ -94,7 +94,13 @@ main {
 }
 
 section {
-  padding: 0 10px;
+  padding: 0 30px;
+}
+
+@media screen and (min-width:964px) {
+  section {
+    padding: 0 10px;
+  }
 }
 
 p {
@@ -459,6 +465,10 @@ a:focus {
 
 .bulleted {
   list-style: disc;
+}
+
+.caveat {
+  padding: 10px;
 }
 
 /* temporary flex-based grid system until display: grid becomes better supported - only about 65% currently according to caniuse.com */
