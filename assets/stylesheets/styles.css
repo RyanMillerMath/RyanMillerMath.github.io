@@ -224,13 +224,13 @@ a:focus {
   color: #3B8686;
 }
 
-.nav a {
+header a {
   color: #79BD9A;
   text-decoration: none;
 }
 
-.nav a:hover,
-.nav a:focus {
+header a:hover,
+header a:focus {
   color: #CFF09E;
 }
 
